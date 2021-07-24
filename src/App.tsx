@@ -20,7 +20,7 @@ function App() {
       fn();
     }
     console.log('inside');
-  }, [userstore.loading, userstore.users]);
+  }, [userstore.loading, userstore.users, userstore]);
   return (
     <div className="App">
       <StoreProvider store={userstore}>
