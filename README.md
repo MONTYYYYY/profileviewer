@@ -1,5 +1,21 @@
 # Profile Viewer
 
+# Brief : 
+
+A small app that enables a user to browse profiles.
+
+Profiles  displayed as simple UI Cards that show a profile photo of a candidate, their name, city they are based in.
+
+When  a user profile is clicked there is navigation to another page that displays the full user profile.
+
+Ability to sort, filter and search candidates.
+
+Fetched dummy data from here - https://randomuser.me/api/?results=50
+
+Styled-components used.
+
+# Decisions: 
+
 Mobx + StoreContext
 
  - I created a mobx store to allow easy handling of data with observables. Once an observable variable is modified it will cause a rerendering of the component.
