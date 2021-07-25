@@ -47,7 +47,7 @@ const TableWrapper = styled.div`
 
 .fl-table thead th {
     color: #ffffff;
-    background: #4FC3A1;
+    background: dimgrey;
 }
 
 

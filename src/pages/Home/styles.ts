@@ -34,6 +34,12 @@ const UsersContainer = styled.div`
     flex-wrap: wrap;
     position : relative;
     background: white;
+
+    .noDataText {
+        width: 100%;
+        text-align:center;
+        font-weight:bold;
+    }
 `;
 
 const HomePage = {

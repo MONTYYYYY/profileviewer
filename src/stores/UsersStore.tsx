@@ -10,8 +10,6 @@ import React from 'react';
 import Collections from '../constants/Collections';
 import { IResult } from '../constants/interfaces';
 
-// import Data from '../services/data';
-
 class Users {
     users: IResult[] = []
 
@@ -50,8 +48,6 @@ class Users {
       this.key = values.key;
       this.order = values.order;
       this.users = Collections.sortByNestedChildProperty(values.profiles, values.key, values.order);
-      console.log('this.users - profiles :', this.users);
-      console.log('value', values);
     }
 
     get UsersFilteredByQuery() {
@@ -69,7 +65,7 @@ class Users {
     * fetch() {
       try {
         this.loading = true;
-        console.log('loading data>>>>>>>>');
+        console.log('loading profiles data ....');
         const { data: { results } } = yield axios.get('https://randomuser.me/api/?results=50');
         this.users = results;
         this.loading = false;

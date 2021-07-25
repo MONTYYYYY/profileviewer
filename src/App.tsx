@@ -10,16 +10,11 @@ function App() {
     if (userstore.loading) {
       const fn = async () => {
         await userstore.fetch();
-        console.log('Fetching data again');
-        console.log('users', userstore.users);
+        console.log('Fetching data');
         userstore.setLoading(false);
-        console.log('loading inner', userstore.loading);
-
-        // setLoading(false);
       };
       fn();
     }
-    console.log('inside');
   }, [userstore.loading, userstore.users, userstore]);
   return (
     <div className="App">
