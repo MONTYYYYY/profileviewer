@@ -7,7 +7,17 @@ Having a mobx store ,Allow a more flexible integration of future C.R.U.D operati
 
 The use of context provider is to allow data to be accessible to all child components.  The data can be loaded once as compared to loading same data multiple times in every component that uses store data. This is good for performance.
 
-Limitation
+File Structure 
+- Added Assets folder to keep all images and export them index file.
+- Components folder to keep different components. This helps working with components easy when app grows.
+- Stores folder as there could be multiples stores in future.
+- Services folder will contain all api endpoints to retrive data.
+- Eslint file important to maintain code style e.g 'AirBnb' style guide used.
+- Pages folder to easily keep different pages , this will be necessary and make routing easy to navigate any page.
+- .nvmrc file to track node version that works with app ( some versions of node may be incompatible with package hence why it's important to have one)
+- .gitignore - this will keep untracked files and will not be pused to repo.
+
+Limitations
 
 - No endpoint to retrieve single user profile on individual page
   - Data always changes when sample endpoint is hit
