@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Profile Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mobx + StoreContext
+
+ - I created a mobx store to allow easy handling of data with observables. Once an observable variable is modified it will cause a rerendering of the component.
+Having a mobx store ,Allow a more flexible integration of future C.R.U.D operations as the app scales.
+
+The use of context provider is to allow data to be accessible to all child components.  The data can be loaded once as compared to loading same data multiple times in every component that uses store data. This is good for performance.
+
+Limitation
+
+- No endpoint to retrieve single user profile on individual page
+  - Data always changes when sample endpoint is hit
+  - Cannot directly go to a user’s profile url without clicking from Home page because data always changes.
+
+Possible improvements 
+  - Adding more jest tests.
+  -  HomePage - Adding more criteria to sort profiles.
+- Files structure : Add Layouts for UI views ( e.g Side Bar / Header ) 
+
+Live demo : https://montlamedi-profileviewer.netlify.app/
 
 ## Available Scripts
 
